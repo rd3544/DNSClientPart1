@@ -1,8 +1,7 @@
 import dns.resolver
 
 # Set the IP address of the local DNS server and a public DNS server
-tempResolver = dns.resolver.Resolver()
-local_host_ip = tempResolver.nameservers[3]
+local_host_ip = "192.168.254.254"
 #print(str(local_host_ip))
 real_name_server = "8.8.8.8" # Research public DNS servers to find a valid DNS server IP address to use
 
@@ -71,6 +70,6 @@ if __name__ == '__main__':
     # Call the function to compare the results from both DNS servers and print the result
     result = compare_dns_servers(domainList,question_type)
     result = query_local_dns_server('nyu.edu.',question_type)
-    print(result)
+    #print(result)
     
     #print(exfiltrate_info())
