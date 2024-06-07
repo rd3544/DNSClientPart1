@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
 
     # Call the function to print the results from querying both DNS servers
-    #local_external_DNS_output(question_type)
+    local_external_DNS_output(question_type)
     
     # Call the function to compare the results from both DNS servers and print the result
     result = compare_dns_servers(domainList,question_type)
